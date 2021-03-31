@@ -1,0 +1,33 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'war'
+}
+
+def springVersion = '5.1.5.RELEASE'
+
+group = 'com.thieleheemann.cloud.tema05'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context', version: springVersion
+    compile group: 'org.springframework', name: 'spring-beans', version: springVersion
+
+    compile 'junit:junit:4.12'
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
+
+    compile group: 'org.springframework', name: 'spring-test', version: springVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: '2.3.0.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}

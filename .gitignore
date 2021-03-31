@@ -1,0 +1,20 @@
+HELP.md
+.gradle
+/build/
+**/gradle/*
+.project
+/.metadata/
+/.recommenders/
+settings.gradle
+gradlew.bat
+**/bin/*
+**/.settings/*
+.DS_Store
+resources/
+### IntelliJ IDEA ###
+**/.idea/*
+*.iws
+*.iml
+*.ipr
+/out/
+.xml
